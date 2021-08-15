@@ -6,7 +6,7 @@ public class Main extends WhosTheHero {
 
     public static void main(String[] args) {
 	System.out.println("hi");
-        Main fun = new Main();
-        System.out.println(fun.myheroname);
+        Main obj = new Main();
+        System.out.println(obj.myheroname);
     }
 }
