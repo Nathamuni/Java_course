@@ -10,8 +10,9 @@ public class Treemap {
         Treemap.put("Srirangam", "trichy");
         Treemap.put("Palakarai", "trichy");
         Treemap.put("Kallukzhi", "trichy");
+
 //alphabetical(ASCII) value
-        System.out.println("Elements are sorted on ascending order :"+ Treemap);
+        System.out.println("Elements are sorted on ascending order : "+ Treemap);
 
         TreeMap<String,String> duplicate = new TreeMap<>();
 
@@ -21,11 +22,11 @@ public class Treemap {
         duplicate.clear();
         System.out.println("Duplicate Treemap : "+duplicate);
 
-        System.out.println("Treemaployee Treemap : "+Treemap.containsKey("Srirangam"));
+        System.out.println("containsKey(Srirangam): "+Treemap.containsKey("Srirangam"));
 
-        System.out.println("Treemaployee Treemap : "+Treemap.containsValue("Nathamuni"));
+        System.out.println("containsValue(Nathamuni): "+Treemap.containsValue("Nathamuni"));
 
-        System.out.println("Cloned copie : "+Treemap.clone());
+        System.out.println("Cloned copy : "+Treemap.clone());
 
         System.out.println(Treemap.isEmpty());
 
@@ -35,7 +36,7 @@ public class Treemap {
 
         System.out.println("All Values  : "+Treemap.values());   //returns all Values
 
-        System.out.println("Retrive all key value pair : "+Treemap.entrySet());
+        System.out.println("Retrieve all key value pair : "+Treemap.entrySet());
 //        In Map the Key-Value pair is called "ENTRY"
 
     }
