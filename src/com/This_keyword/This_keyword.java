@@ -5,7 +5,7 @@ package com.This_keyword;
         String name;
         float fee;
         Student(int rollno,String name,float fee){
-            this.rollno=rollno;// this. here refers to the class variable
+            this.rollno=  rollno;// this. here refers to the class variable
             this.name=name;// The most common use of this keyword is to eliminate the confusion
             this.fee=fee;// between class attributes and parameters with the same name
         }
