@@ -10,6 +10,7 @@ public class Arraylist {
 
         //    <Generics used to denote the datatype we wanna store> (If needed)
         ArrayList<String> arraylist = new ArrayList<String>(); //Overriding
+// Or we can also use  new Arrays.aslist(); <= and specify the value inside if we know in advance
 
         arraylist.add("Audi");
         arraylist.add("BMW");
