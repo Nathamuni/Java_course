@@ -5,4 +5,5 @@ public interface Interface2 extends upComingProjects{
     * But
     *    a class should always implement an interface or more..!*/
     void method3();
+
 }
