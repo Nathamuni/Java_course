@@ -2,7 +2,7 @@ package com.comparable_VS_comparator;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Student implements Comparable<Student>{
+class Student implements Comparable<Student>{ // functional interface
   int rollno , age;
   String name;
   Student(Integer rollno, String name ,Integer age){
@@ -11,7 +11,7 @@ class Student implements Comparable<Student>{
      this.name = name;
   }
 
-  @Override
+    @Override
   public int compareTo(Student object1) {// Here we are concern about age
 
     if(age == object1.age) return 0; // return 0 => leave it as-it-is[Not necessary to worry about]
@@ -24,7 +24,8 @@ class Student implements Comparable<Student>{
   /*
   *Since we need atleast 2 objs to compare here only one arg
   *Since compareTo is a method of class
-  *(we create an obj which will be one of its arg) */
+  *(we create an obj which will be one of its arg)
+  *for sure to call compareTo method() we need one obj & onemore argument that we pass*/
  }
 //----------------------------------------------------------
 
