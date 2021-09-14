@@ -3,10 +3,10 @@ package com.StaticKeyword;
 public class StaticMethod {
 
     public static void method1(){
-        System.out.printf("Static Method ");
+        System.out.println("Static Method ");
     }
     public void nonStatic(){
-        System.out.printf("NON_static ");
+        System.out.println("NON_static ");
 
     }
 
