@@ -6,7 +6,7 @@ class X {
     }
 }
 
-    class Y extends X {
+class Y extends X {
   public Y() {
         System.out.println("Y");
     }
