@@ -2,11 +2,11 @@ package TestMyself;
 
 public class prob5 {
 
-    public void PrintStringData(Object obj){
+    public void PrintStringData(Object obj){  // Object datatype is used when we don't know what DT the variable might point to
         System.out.println("Method within OBJECT is called");
     }
 
-    public void PrintStringData(String str){
+    public void PrintStringData(String str){ // Specific DT
         System.out.println("Method within STRING is called ");
     }
 

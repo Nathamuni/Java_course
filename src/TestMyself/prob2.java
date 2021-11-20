@@ -6,7 +6,7 @@ class X {
     }
 }
 
-class Y extends X {
+    class Y extends X {
   public Y() {
         System.out.println("Y");
     }
@@ -17,10 +17,10 @@ class Z extends Y {
         System.out.println("Z");
     }
 
-    private class prob2 {
-        public static void main(String[] args) {
-           Z z = new Z();
-        }
+}
+public class prob2 {
+    public static void main(String[] args) {
+        Z z = new Z();
     }
 }
 

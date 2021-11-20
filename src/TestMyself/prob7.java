@@ -8,6 +8,5 @@ public class prob7 {
         Integer i3 = 124;
         Integer i4 = 124;
         System.out.println(i3 == i4);
-
     }
 }
