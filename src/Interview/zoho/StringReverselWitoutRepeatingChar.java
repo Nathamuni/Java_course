@@ -8,7 +8,7 @@ public class StringReverselWitoutRepeatingChar {
 
     public static void main(String[] args) {
         System.out.println(summa(s));
-    }
+     }
 
     static ArrayList<Character> arr = new ArrayList();
 
