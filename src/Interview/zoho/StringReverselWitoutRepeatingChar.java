@@ -6,7 +6,7 @@ import java.util.HashSet;
 public class StringReverselWitoutRepeatingChar {
     static String s = "GEEKS FOR GEEKS  ";
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         System.out.println(summa(s));
     }
 
