@@ -12,6 +12,10 @@ public class Swaping {
         a = a+b;
         b = a-b;
         a = a-b;
+        /*
+        a= a^b
+         b = a^b
+         a= a^b*/
         System.out.println("after swapping\na="+a+"\tb="+b);
     }
 }
