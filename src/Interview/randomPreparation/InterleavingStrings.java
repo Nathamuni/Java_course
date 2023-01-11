@@ -3,28 +3,36 @@ package Interview.randomPreparation;
 //to find third string can be built with s1 and s2 (same order)
 public class InterleavingStrings {
     public static void main(String[] args) {
-        System.out.println(isInterleave("aabcc","dbbca","aadbbcbcac"));
+        System.out.println(isInterleave("aabc","dbbca","aadbbcbcac"));
     }
     public static boolean isInterleave(String s1, String s2, String s3) {
         int i,j,k=i=j=0;
         int flag =0,summa1=0,summa2=0;
         while(i < s1.length() || j < s2.length()){
-            if(s1.charAt(i) == s3.charAt(k) && s2.charAt(j) == s3.charAt(k)){
+            if(i<s1.length() && s1.charAt(i) == s3.charAt(k) && j<s2.length() && s2.charAt(j) == s3.charAt(k)){
                 flag =1;
-                i++;j++;
+                i++;j++;k++;
             }
-            else if(s1.charAt(i) == s3.charAt(k)) {
-                summa1 = i;
-                if(flag ==1) j=summa2;
+            else if(i<s1.length() && s1.charAt(i) == s3.charAt(k)) {
+
+                if(flag ==1) {
+                    j=summa2;
+                    flag=0;
+                }
                 i++;k++;
+                summa1 = i;
             }
-           else if(s2.charAt(j) == s3.charAt(k)) {
-                summa2 = j;
-                if(flag ==1) i=summa1;
+           else if(j<s2.length() && s2.charAt(j) == s3.charAt(k)) {
+
+                if(flag ==1) {
+                    i=summa1;
+                    flag=0;
+                }
                 j++;k++;
+                summa2 = j;
             }
            else return false;
         }
-        return true;
+        return s1.length() + s2.length() == s3.length();
     }
 }
