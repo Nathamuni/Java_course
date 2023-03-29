@@ -8,8 +8,8 @@ public class printLongestSubSeq {
             System.out.println(f(s1.length()-1,s2.length()-1));
 
 
-            for(int i =0 ; i<s1.length()-1;i++) {
-                for (int j = 0; j < s2.length() - 1; j++)
+            for(int i =0 ; i<s1.length();i++) {
+                for (int j = 0; j < s2.length(); j++)
                     System.out.print(dp[i][j]);
                 System.out.println();
             }
