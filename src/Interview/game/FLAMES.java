@@ -3,8 +3,10 @@ import java.util.*;
 public class FLAMES {
     String s1 = "nathamuni";
     String s2 = "madavan";
+
     char[] arr1 = s1.toCharArray();
     char[] arr2 = s2.toCharArray();
+
     HashMap<Character, Integer> h1 = new HashMap<>();
     HashMap<Character, Integer> h2 = new HashMap<>();
 
