@@ -1,29 +1,36 @@
-class a {
-    static int sum = 0;
+import java.util.ArrayList;
+import java.util.List;
 
-
-    public static int fact(int n, int g) {
-        for(int i=5; i<= n; i++){
-            System.out.println(g);
-            if( g>1 && i % fact(n,g-1) ==0 ){
-               sum += g;
-           }
-
-           if(sum==i && g==2) {
-               return i;
-           }
-           if(g<=2) return 999999;
-
-        }
-        return 0;
-    }
-
-
+class SubsetGenerator {
     public static void main(String[] args) {
+        SubsetGenerator generator = new SubsetGenerator();
+        int[] arr = {1, 2, 3, 4};
+        List<List<Integer>> subsets = generator.generateSubsets(arr);
 
-        System.out.println(fact(100,100));
-
-
+        for (List<Integer> subset : subsets) {
+            System.out.println(subset);
+        }
     }
 
+    public List<List<Integer>> generateSubsets(int[] arr) {
+        List<List<Integer>> subsets = new ArrayList<>();
+        List<Integer> currentSubset = new ArrayList<>();
+        generateSubsets(arr, 0, currentSubset, subsets);
+        return subsets;
+    }
+
+    private void generateSubsets(int[] arr, int index, List<Integer> currentSubset, List<List<Integer>> subsets) {
+        if (index == arr.length) {
+            subsets.add(new ArrayList<>(currentSubset));
+            return;
+        }
+
+        // Include the current element
+        currentSubset.add(arr[index]);
+        generateSubsets(arr, index + 1, currentSubset, subsets);
+
+        // Exclude the current element
+        currentSubset.remove(currentSubset.size() - 1);
+        generateSubsets(arr, index + 1, currentSubset, subsets);
+    }
 }
