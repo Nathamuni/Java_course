@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="ant-tools-src">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/ant-tools-src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/alphamaskdemo" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/balloonmanagerdemo" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/balloontips" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/dnddemo" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/monitordemo/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/msoffice/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/native_window_msg/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/ntservice/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/platform/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/platform/test" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/shapedwindowdemo" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/w32printing/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/w32windowhooks" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/contrib/x11/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/src" />
+      <root url="file://$USER_HOME$/Downloads/jna-master/jna-master/test" />
+    </SOURCES>
+  </library>
+</component>
