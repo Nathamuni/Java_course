@@ -20,7 +20,7 @@ public class IsGratestElementTwiceLarge {
     public int lessmax(int index)
     {
         int max = A[index];
-        int i,lessmax =A[0];
+        int i,lessmax =0;
 
         for( i=1; i<A.length;i++){
             if(lessmax < A[i] && A[i] != A[index]) lessmax = A[i];
