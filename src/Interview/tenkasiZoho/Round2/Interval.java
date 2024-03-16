@@ -6,18 +6,21 @@ import java.util.HashMap;
 
 public class Interval {
     public static void main(String[] args) {
-            int a[][]={{1,3},{2,6},{8,10},{15,18}};
+            int a[][]={{15,18},{1,3},{2,6},{8,10}};
 //        Arrays.sort(a, Comparator.comparingInt(arr -> arr[0]));
-
-        for (int i = 0; i < a.length - 1; i++) {
+        //selection sorting by array start value
+        int j1=-1;
+        for (int i = 0; i < a.length ; i++) {
+            int min = Integer.MAX_VALUE;
             for (int j = i; j < a.length; j++) {
+                if(a[j][0]<= min)
+                    j1=j;
+                min =Math.min(a[j][0],min);
 
-                if(a[j][0] <a[i][0]){
-                    int temp = a[i][0];
-                    a[i][0] = a[j][0];
-                    a[j][0]= temp;
-                }
             }
+            int []temp= a[i];
+            a[i] = a[j1];
+            a[j1] = temp;
         }
         System.out.println(Arrays.deepToString(a));
 
