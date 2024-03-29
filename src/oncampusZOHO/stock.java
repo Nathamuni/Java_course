@@ -10,8 +10,10 @@ public class stock {
         int profit =0;
 //        int n= arr[0];
         int min= arr[0];
+        int max=0;
         for(int i=0; i<arr.length ; i++){
-            profit = Math.max(profit,arr[i]-min);
+            max=Math.max(max,arr[i]);
+            profit = Math.max(profit,max-min);
             min = Math.min(min,arr[i]);
         }
         return profit;
